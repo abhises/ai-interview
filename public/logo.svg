@@ -1,0 +1,64 @@
+<!-- Save this as interview-logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img" aria-label="Interview logo">
+  <title>Interview</title>
+  <!-- Background optional (comment out if you want transparent) -->
+  <!-- <rect width="100%" height="100%" fill="#ffffff"/> -->
+
+  <!-- Colors -->
+  <!-- Primary blue: #0B74DE, secondary: #1E90FF -->
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0B74DE"/>
+      <stop offset="1" stop-color="#1E90FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0B74DE" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Microphone inside speech bubble -->
+  <g transform="translate(30,20)" filter="url(#shadow)">
+    <!-- Speech bubble -->
+    <path d="M0,20
+             a20,20 0 0 1 20,-20
+             h120
+             a20,20 0 0 1 20,20
+             v60
+             a20,20 0 0 1 -20,20
+             h-60
+             l-28,20
+             v-20
+             h-12
+             a20,20 0 0 1 -20,-20
+             z"
+          fill="url(#g1)"/>
+
+    <!-- Mic body -->
+    <g transform="translate(60,18)">
+      <rect x="-14" y="-10" width="28" height="50" rx="14" ry="14" fill="#ffffff" opacity="0.95"/>
+      <!-- mic grille lines -->
+      <g stroke="#0B74DE" stroke-width="2" stroke-linecap="round" opacity="0.9">
+        <path d="M-8 4 L8 4"/>
+        <path d="M-8 10 L8 10"/>
+        <path d="M-8 -2 L8 -2"/>
+      </g>
+
+      <!-- mic stem -->
+      <rect x="-6" y="40" width="12" height="8" rx="4" fill="#0B74DE" />
+      <!-- base -->
+      <ellipse cx="0" cy="56" rx="28" ry="6" fill="#0B74DE" opacity="0.95"/>
+    </g>
+  </g>
+
+  <!-- Text: Interview -->
+  <g transform="translate(190,115)" aria-hidden="true">
+    <!-- wordmark -->
+    <text x="0" y="0" font-family="Verdana, Arial, sans-serif" font-weight="700" font-size="48" fill="#0B74DE">
+      Interview
+    </text>
+    <!-- tagline (optional) -->
+    <text x="0" y="32" font-family="Verdana, Arial, sans-serif" font-weight="400" font-size="14" fill="#4a90e2" opacity="0.9">
+      conversations that matter
+    </text>
+  </g>
+</svg>
