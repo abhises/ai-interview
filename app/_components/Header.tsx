@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -10,7 +11,9 @@ export const Header = () => {
           <Image src={"./logo.svg"} alt="logo" height={500} width={500}/>
           {/* <h1 className="text-base font-bold md:text-2xl">AI Interview</h1> */}
         </div>
-        <Button>Get Started</Button>
+        <Link href="/dashboard">
+        <Button className="cursor-pointer">Get Started</Button>
+        </Link>
       </nav>
     </div>
   );

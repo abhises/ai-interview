@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -63,8 +64,11 @@ const Hero = () => {
           }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <Button>Explore Now</Button>
-          <Button> Contact Support</Button>
+          <Link href="/dashboard">
+            {" "}
+            <Button className="cursor-pointer">Explore Now</Button>
+          </Link>
+          <Button className="cursor-pointer  "> Contact Support</Button>
         </motion.div>
         <motion.div
           initial={{
